@@ -1,0 +1,92 @@
+
+    /* Center the card on the page and set background */
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f0f2f5;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Style the profile card */
+    .profile-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      max-width: 350px;
+      width: 90vw;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    /* Profile picture styling */
+    .profile-image img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #4f8cff;
+      margin-bottom: 1rem;
+    }
+
+    /* Name styling */
+    .profile-info h2 {
+      margin: 0.5rem 0 0.2rem 0;
+      font-size: 1.5rem;
+      color: #222;
+    }
+
+    /* Designation styling */
+    .profile-info h4 {
+      margin: 0 0 1rem 0;
+      color: #4f8cff;
+      font-weight: 500;
+    }
+
+    /* Bio paragraph styling */
+    .profile-info p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    /* Social media icons container */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    /* Social icons images styling */
+    .social-icons .icon img {
+      width: 28px;
+      height: 28px;
+      filter: grayscale(1) brightness(0.7);
+      transition: filter 0.3s, transform 0.3s;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 500px) {
+      .profile-card {
+        padding: 1.2rem 0.5rem;
+        max-width: 95vw;
+      }
+      .profile-info h2 {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Hover animation for the card */
+    .profile-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 16px 32px rgba(79,140,255,0.15);
+    }
+
+    /* Hover effect on social icons */
+    .social-icons .icon:hover img {
+      filter: none;
+      transform: scale(1.15) rotate(-8deg);
+    }
